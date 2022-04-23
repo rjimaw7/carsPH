@@ -14,6 +14,7 @@ import CreateListing from "./pages/CreateListing";
 import EditListing from "./pages/EditListing";
 import Listing from "./pages/Listing";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/edit-listing/:listingId" element={<PrivateRoute />}>
             <Route path="/edit-listing/:listingId" element={<EditListing />} />
           </Route>
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
 

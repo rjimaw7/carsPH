@@ -1,10 +1,8 @@
 import React from "react";
-import carLogo from "../assets/svg/carlogo.svg";
-import { useNavigate } from "react-router-dom";
+
+import { Link, useNavigate } from "react-router-dom";
 
 function Footer() {
-  const navigate = useNavigate();
-
   return (
     <>
       {/* <!-- component -->
@@ -55,8 +53,18 @@ function Footer() {
               &copy; carsPH, <span>{new Date().getFullYear()}</span>{" "}
             </p>
             <div className="order-1 md:order-2">
-              <span className="px-2 cursor-pointer">About</span>
-              <span className="px-2 border-l cursor-pointer">Contact</span>
+              <Link to="/about" className="px-2 cursor-pointer">
+                About
+              </Link>
+              <span className="px-2 border-l cursor-pointer">
+                <a
+                  href="mailto:rjimaw7777@gmail.com"
+                  target="_blank rel="
+                  noreferrer
+                >
+                  Contact
+                </a>
+              </span>
             </div>
           </div>
         </div>
