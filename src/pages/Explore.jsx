@@ -31,9 +31,9 @@ function Explore() {
             <div className="flex  gap-4 mt-8 text-center">
               <Link
                 className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-black sm:w-auto  focus:outline-none focus:ring"
-                to="/offers"
+                to="/create-listing"
               >
-                View Cars
+                Create Car Listing
               </Link>
             </div>
           </div>
